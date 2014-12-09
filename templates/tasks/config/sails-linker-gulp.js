@@ -155,7 +155,7 @@ module.exports = function(gulp, plugins, growl) {
         return gulp.src('.tmp/public/**/*.html')
             // Link the JavaScript
             .pipe(plugins.linker({
-                scripts: ['.tmp/public/min/production.min.js'],
+                scripts: ['.tmp/public/concat/production.min.js'],
                 startTag: '<!--SCRIPTS-->',
                 endTag: '<!--SCRIPTS END-->',
                 fileTmpl: '<script src="%s"></script>',
@@ -163,7 +163,7 @@ module.exports = function(gulp, plugins, growl) {
             }))
             // Link the styles
             .pipe(plugins.linker({
-                scripts: ['.tmp/public/min/production.min.css'],
+                scripts: ['.tmp/public/concat/production.min.css'],
                 startTag: '<!--STYLES-->',
                 endTag: '<!--STYLES END-->',
                 fileTmpl: '<link rel="stylesheet" href="%s">',
@@ -188,7 +188,7 @@ module.exports = function(gulp, plugins, growl) {
         return gulp.src(['views/**/*.html', 'views/**/*.ejs'])
             // Link the JavaScript
             .pipe(plugins.linker({
-                scripts: ['.tmp/public/min/production.min.js'],
+                scripts: ['.tmp/public/concat/production.min.js'],
                 startTag: '<!--SCRIPTS-->',
                 endTag: '<!--SCRIPTS END-->',
                 fileTmpl: '<script src="%s"></script>',
@@ -196,7 +196,7 @@ module.exports = function(gulp, plugins, growl) {
             }))
             // Link the styles
             .pipe(plugins.linker({
-                scripts: ['.tmp/public/min/production.min.css'],
+                scripts: ['.tmp/public/concat/production.min.css'],
                 startTag: '<!--STYLES-->',
                 endTag: '<!--STYLES END-->',
                 fileTmpl: '<link rel="stylesheet" href="%s">',
@@ -221,7 +221,7 @@ module.exports = function(gulp, plugins, growl) {
         return gulp.src('.tmp/public/**/*.html')
             // Link the JavaScript
             .pipe(plugins.linker({
-                scripts: ['.tmp/public/min/production.min.js'],
+                scripts: ['.tmp/public/concat/production.min.js'],
                 startTag: '<!--SCRIPTS-->',
                 endTag: '<!--SCRIPTS END-->',
                 fileTmpl: '<script src="%s"></script>',
@@ -230,7 +230,7 @@ module.exports = function(gulp, plugins, growl) {
             }))
             // Link the styles
             .pipe(plugins.linker({
-                scripts: ['.tmp/public/min/production.min.css'],
+                scripts: ['.tmp/public/concat/production.min.css'],
                 startTag: '<!--STYLES-->',
                 endTag: '<!--STYLES END-->',
                 fileTmpl: '<link rel="stylesheet" href="%s">',
@@ -256,7 +256,7 @@ module.exports = function(gulp, plugins, growl) {
         return gulp.src(['views/**/*.html', 'views/**/*.ejs'])
             // Link the JavaScript
             .pipe(plugins.linker({
-                scripts: ['.tmp/public/min/production.min.js'],
+                scripts: ['.tmp/public/concat/production.min.js'],
                 startTag: '<!--SCRIPTS-->',
                 endTag: '<!--SCRIPTS END-->',
                 fileTmpl: '<script src="%s"></script>',
@@ -265,7 +265,7 @@ module.exports = function(gulp, plugins, growl) {
             }))
             // Link the styles
             .pipe(plugins.linker({
-                scripts: ['.tmp/public/min/production.min.css'],
+                scripts: ['.tmp/public/concat/production.min.css'],
                 startTag: '<!--STYLES-->',
                 endTag: '<!--STYLES END-->',
                 fileTmpl: '<link rel="stylesheet" href="%s">',
