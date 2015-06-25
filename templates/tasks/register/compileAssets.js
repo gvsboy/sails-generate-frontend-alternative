@@ -5,6 +5,7 @@ module.exports = function (gulp, plugins) {
 			'jst:dev',
 			'scss:dev',
 			'copy:dev',
+			'js:libs',
 			cb
 		);
 	});

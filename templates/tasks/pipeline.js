@@ -48,6 +48,11 @@ var templateFilesToInject = [
   'templates/**/*.html'
 ];
 
+// A collection of all the JS libraries (by module name) that you'd like to
+// package together. This is better for caching as app code tends to change
+// more often than libs/dependencies.
+var jsLibs = [];
+
 // Prefix relative paths to source files so they point to the proper locations
 // (i.e. where the other Grunt tasks spit them out, or in some cases, where
 // they reside in the first place)
@@ -60,3 +65,4 @@ module.exports.jsFilesToInject = jsFilesToInject.map(function(path) {
 module.exports.templateFilesToInject = templateFilesToInject.map(function(path) {
   return 'assets/' + path;
 });
+module.exports.jsLibs = jsLibs;
