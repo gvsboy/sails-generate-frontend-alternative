@@ -1,7 +1,7 @@
 {
-  "name": "sails-generate-frontend-gulp",
-  "version": "0.1.3",
-  "description": "Generate a frontend for Sails using gulp instead of grunt.",
+  "name": "sails-generate-frontend-alternative",
+  "version": "0.0.1",
+  "description": "A Sails frontend using Gulp, Browserify, Babel, SCSS, and more.",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha",
@@ -13,9 +13,11 @@
     "sails",
     "generate",
     "plugin",
-    "gulp"
+    "gulp",
+    "babel",
+    "browserify"
   ],
-  "author": "karnith",
+  "author": "gvsboy",
   "license": "MIT",
   "dependencies": {
     "lodash": ">=2.4.x",
@@ -30,10 +32,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Karnith/sails-generate-frontend-gulp"
+    "url": "git://github.com/gvsboy/sails-generate-frontend-alternative"
   },
   "bugs": {
-    "url": "https://github.com/Karnith/sails-generate-frontend-gulp/issues"
+    "url": "https://github.com/gvsboy/sails-generate-frontend-alternative/issues"
   },
   "sailsGenerator": {
     "type": "frontend",
